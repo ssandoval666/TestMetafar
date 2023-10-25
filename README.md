@@ -13,3 +13,5 @@ Los unicos parametros validos para generar un token son NroTarjeta:123456 y Pin:
 
 Para el almacenamiento de la informacion se uso EF con SQLLite apuntando a una base en disco.
 La misma se crea y se carga cuando le inicia la WebApi.
+
+En el root de repositorio se incluyo un archivo llamado "DER_DB.png" donde se puede observar el modelo de la DB
