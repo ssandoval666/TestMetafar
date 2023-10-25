@@ -7,9 +7,9 @@ de versionado para en un futuro se pueda trabajar con versiones de los metodos. 
 disponible es la 1
 
 Se implemento un token JWT, el mismo se tiene que ejecutar y anexar para para la ejecucion de los 
-metodos de conrolador de People.
+metodos de conrolador 
 
-Los unicos parametros validos para generar un token son usr:test y pasw:test
+Los unicos parametros validos para generar un token son NroTarjeta:123456 y Pin:123456
 
 Para el almacenamiento de la informacion se uso EF con SQLLite apuntando a una base en disco.
 La misma se crea y se carga cuando le inicia la WebApi.
