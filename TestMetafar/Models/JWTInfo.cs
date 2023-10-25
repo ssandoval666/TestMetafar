@@ -7,12 +7,12 @@
             /// Nombre de Usuario
             ///</Summary>
             ///
-            public string UserName { get; set; }            
+            public string NroTarjeta { get; set; }            
 
             ///<Summary>
             /// Contraseña
             ///</Summary>
             ///
-            public string Password { get; set; }
+            public string Pin { get; set; }
         }
     }

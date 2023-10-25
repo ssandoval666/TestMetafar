@@ -44,15 +44,15 @@ namespace TestMetafar.Controllers
 
             if (_userData != null)
             {
-                if (_TarjetaService.ValidarTarjeta(_userData.UserName, _userData.Password))
+                if (_TarjetaService.ValidarTarjeta(_userData.NroTarjeta, _userData.Pin))
                 {
                     //create claims details based on the user information
                     var claims = new[] {
                     new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-                    new Claim("Password", _userData.Password),
-                    new Claim("UserName", _userData.UserName)
+                    new Claim("Pin", _userData.Pin),
+                    new Claim("NroTarjeta", _userData.NroTarjeta)
                    };
 
                     var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
