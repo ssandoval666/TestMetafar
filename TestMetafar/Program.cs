@@ -83,7 +83,6 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 
-builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<ITarjetaService, TarjetaService>();
 
 var app = builder.Build();
